@@ -3,511 +3,553 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
 
-	<title>Регистрация</title>
-	<meta name="description" content="">
+    <title>Регистрация</title>
+    <meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.min.css">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.min.css">
 
 
-	<style type="text/css">
-.login-box{
-  position:relative;
-  margin: 50px auto;
-  width: 500px;
-  height: 400px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.33);
--moz-box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.33);
-box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.33);
-}
-.lb-header{
-  position: relative;
-    color: #00415d;
-    margin: 5px 5px -15px 5px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-    height: 36px;
-    text-transform: uppercase;
-}
-.lb-header a{
-  margin: 0 25px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #666;
-  font-weight: bold;
-  font-size: 15px;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-.lb-header .active{
-  color: #077eff;
-  font-size: 18px;
-}
-.social-login{
-  position:relative;
-  float: left;
-  width: 100%;
-  height:auto;
-  padding: 10px 0 15px 0;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 15px;
-}
-.social-login a{
-  position: relative;
-    float: left;
-    width: 48%;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid rgba(0,0,0,0.05);
-    padding: 12px;
-    border-radius: 2px;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 0 1%;
-    text-align: center;
-}
-.social-login a i{
-  position: relative;
-  float: left;
-  width: 20px;
-  top: 2px;
-}
-.social-login a:first-child{
-  background-color: #49639F;
-}
-.social-login a:last-child{
-  background-color: #DF4A32;
-}
-.email-login,.email-signup{
-  position:relative;
-  float: left;
-  width: 100%;
-  height:auto;
-  margin-top: 20px;
-  text-align:center;
-}
-.u-form-group{
-  width:100%;
-  margin-bottom: 10px;
-}
-.u-form-group input[type="email"],
-.u-form-group input[type="password"]{
-  width: calc(50% - 22px);
-  height:45px;
-  outline: none;
-  border: 1px solid #ddd;
-  padding: 0 10px;
-  border-radius: 2px;
-  color: #333;
-  font-size:0.8rem;
-  -webkit-transition:all 0.1s linear;
-  -moz-transition:all 0.1s linear;
-  transition:all 0.1s linear;
-}
-.u-form-group input:focus{
-  border-color: #358efb;
-}
-.u-form-group button{
-  width:50%;
-  background-color: #077eff;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 14px 0;
-  border-radius: 2px;
-  text-transform: uppercase;
-}
-.forgot-password{
-  width:50%;
-  text-align: left;
-  text-decoration: underline;
-  color: #888;
-  font-size: 0.75rem;
-}
-.social-login svg{
-	float: left;
-	width: 25px;
-	fill: #fff;
-	height: 25px;
-}
+    <style type="text/css">
+        .login-box {
+            position: relative;
+            margin: 50px auto;
+            width: 500px;
+            height: 400px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            -webkit-box-shadow: 2px 2px 15px -4px rgba(0, 0, 0, 0.33);
+            -moz-box-shadow: 2px 2px 15px -4px rgba(0, 0, 0, 0.33);
+            box-shadow: 2px 2px 15px -4px rgba(0, 0, 0, 0.33);
+        }
 
-	</style>
+        .lb-header {
+            position: relative;
+            color: #00415d;
+            margin: 5px 5px -15px 5px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            height: 36px;
+            text-transform: uppercase;
+        }
+
+        .lb-header a {
+            margin: 0 25px;
+            padding: 0 20px;
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+            font-size: 15px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+        }
+
+        .lb-header .active {
+            color: #077eff;
+            font-size: 18px;
+        }
+
+        .social-login {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: auto;
+            padding: 10px 0 15px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+        }
+
+        .social-login a {
+            position: relative;
+            float: left;
+            width: 48%;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 12px;
+            border-radius: 2px;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0 1%;
+            text-align: center;
+        }
+
+        .social-login a i {
+            position: relative;
+            float: left;
+            width: 20px;
+            top: 2px;
+        }
+
+        .social-login a:first-child {
+            background-color: #49639F;
+        }
+
+        .social-login a:last-child {
+            background-color: #DF4A32;
+        }
+
+        .email-login, .email-signup {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .u-form-group {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .u-form-group input[type="email"],
+        .u-form-group input[type="password"] {
+            width: calc(50% - 22px);
+            height: 45px;
+            outline: none;
+            border: 1px solid #ddd;
+            padding: 0 10px;
+            border-radius: 2px;
+            color: #333;
+            font-size: 0.8rem;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+        }
+
+        .u-form-group input:focus {
+            border-color: #358efb;
+        }
+
+        .u-form-group button {
+            width: 50%;
+            background-color: #077eff;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 14px 0;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+
+        .forgot-password {
+            width: 50%;
+            text-align: left;
+            text-decoration: underline;
+            color: #888;
+            font-size: 0.75rem;
+        }
+
+        .social-login svg {
+            float: left;
+            width: 25px;
+            fill: #fff;
+            height: 25px;
+        }
+
+    </style>
 
 
 </head>
 
 <body>
-	<!--  -->
-	<!-- <div class="vl vertical-line-1"></div>
-	<div class="vl vertical-line-2"></div> -->
-	<!--  -->
-	<header class="sign_form" style="display: block; position: relative;">
-			 		<div class="container">
-			 			<div class="row">
-			 				<div class="col-2">
-			 					<a href="/" class="logo">
-			 						<img role="logo" src="img/logo-blue.png" alt="logo">
-			 					</a>
-					 			
-					 		</div>
-					 		<div class=" col-7">
-					 			<nav>
-					 				<ul>
-					 					<a href="#">
-					 						<li>
-					 						<span>Главная</span>
-					 							
+<!--  -->
+<!-- <div class="vl vertical-line-1"></div>
+<div class="vl vertical-line-2"></div> -->
+<!--  -->
+<header class="sign_form" style="display: block; position: relative;">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <a href="/" class="logo">
+                    <img role="logo" src="img/logo-blue.png" alt="logo">
+                </a>
 
-					 						</li>
-					 					</a>
-					 					<a href="#">
-					 						<li>
-
-					 							<span>О нас</span>
+            </div>
+            <div class=" col-7">
+                <nav>
+                    <ul>
+                        <a href="/">
+                            <li class="active">
+                                <span>Главная</span>
 
 
-					 							<div class="megamenu">
-					 								<ul>
-					 									<a href="#">
-					 										<li>Проекты</li>
-					 									</a>
-					 									<a href="#">
-					 										<li>История</li>
-					 									</a>
-					 									<a href="#">
-					 										<li>Документация</li>
-					 									</a>
-					 								</ul>
-					 							</div>
+                            </li>
+                        </a>
+                        <a href="/about.html">
+                            <li>
+
+                                <span>О нас</span>
 
 
-					 						</li>
-					 					</a>
-					 					<a href="#">
-					 						<li><span>Новости</span></li>
-					 					</a>
-					 					<a href="#">
-					 						<li><span>Помочь</span>
+                                <div class="megamenu">
+                                    <ul>
+                                        <a href="/history.html">
+                                            <li>История</li>
+                                        </a>
+                                        <a href="/documents.html">
+                                            <li>Документация</li>
+                                        </a>
+                                        <a href="/review.html">
+                                            <li>Отзывы</li>
+                                        </a>
+                                        <a href="/team.html">
+                                            <li>Команда</li>
+                                        </a>
+                                    </ul>
+                                </div>
 
-					 							<div class="megamenu">
-					 								<ul>
-					 									<a href="#">
-					 										<li>Волонтеры</li>
-					 									</a>
-					 									<a href="#">
-					 										<li>Стать донором</li>
-					 									</a>
-					 									<a href="#">
-					 										<li>Присоедениться к нам</li>
-					 									</a>
-					 								</ul>
-					 							</div>
 
-					 						</li>
-					 					</a>
-					 					<a href="#">
-					 						<li><span>Проекты</span></li>
-					 					</a>
-					 					<a href="#">
-					 						<li><span>Поиск партнеров</span></li>
-					 					</a>
-					 				</ul>
-					 			</nav>
-					 		</div>
-					 		<div class=" col-3">
-					 				<a href="#" class="reg_btn">
-					 						Регистрация
-					 				</a>
-					 				<a href="#" >
-					 						Вход
-					 				</a>
-					 		</div>
-			 			</div>
-			 		</div>
-			 		
-			 	</header>
-	  
-	 
-	<main>  
-		<section class="s_content">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						
-  <div class="login-box">
-    <div class="lb-header">
-      <a href="#" class="active" id="login-box-link">Вход</a>
-      <a href="#" id="signup-box-link">Регистрация</a>
+                            </li>
+                        </a>
+                        <a href="/news.html">
+                            <li><span>Новости</span></li>
+                        </a>
+                        <a href="/help.html">
+                            <li><span>Помощь</span>
+
+                                <div class="megamenu">
+                                    <ul>
+                                        <a href="#">
+                                            <li>Волонтеры</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Стать донором</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Присоедениться к нам</li>
+                                        </a>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </a>
+                        <a href="/projects.html">
+                            <li><span>Проекты</span></li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <span>Поиск партнеров</span>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <div class=" col-3">
+                <a href="#" class="reg_btn">
+                    Регистрация
+                </a>
+                <a href="#">
+                    Вход
+                </a>
+            </div>
+        </div>
     </div>
-    
-    <form class="email-login">
-    	<div class="social-login">
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/></svg>
-        Авторизация через facebook
-      </a>
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
-         Авторизация через Google
-      </a>
-    </div>
-      <div class="u-form-group">
-        <input type="email" placeholder="Email"/>
-      </div>
-      <div class="u-form-group">
-        <input type="password" placeholder="Password"/>
-      </div>
-      <div class="u-form-group">
-        <button>Вход</button>
-      </div>
-      <div class="u-form-group">
-        <a href="#" class="forgot-password">Забыли пароль?</a>
-      </div>
-    </form>
-    <form class="email-signup">
-    	<div class="social-login">
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/></svg>
-        Авторизация через facebook
-      </a>
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
-         Авторизация через Google
-      </a>
-    </div>
-      <div class="u-form-group">
-        <input type="email" placeholder="Email"/>
-      </div>
-      <div class="u-form-group">
-        <input type="password" placeholder="Password"/>
-      </div>
-      <div class="u-form-group">
-        <input type="password" placeholder="Confirm Password"/>
-      </div>
-      <div class="u-form-group">
-        <button>Регистрация</button>
-      </div>
-    </form>
-  </div>
-					</div>
-				</div>
 
-				
-			</div>
-		</section>
+</header>
 
-		<!-- Add Google Calendar -->
-						<section class="g_calendar">
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12 center">
 
-										<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20131124T010000Z/20131124T020000Z&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY" target="_blunk" class="add_to_gc">
-											<!-- <h3>Добавить в гугл календарь</h3> -->
-											<img src="img/icons/gc-1.png">
-											<button class="btn-1">Добавить в календарь</button>
+<main>
+    <section class="s_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
 
-										</a>
-									</div>
-								</div>
-							</div>
-							
-						</section>
-						<!--  -->
-	<section class="s-newsletter">
-	 		<div class="container">
+                    <div class="login-box">
+                        <div class="lb-header">
+                            <a href="#" class="active" id="login-box-link">Вход</a>
+                            <a href="#" id="signup-box-link">Регистрация</a>
+                        </div>
 
-	 			<div class="row">
-	 				<div class="col-md-12 center">
-	 					<h2 class="h"><span>подписаться  </span> <b>На Рассылку </b></h2>
-	 					<small>Еженедельно получайте новостную рассылку с последними событиями, проектами и с новыми партнерами.</small>
+                        <form class="email-login">
+                            <div class="social-login">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                                        <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/>
+                                    </svg>
+                                    Авторизация через facebook
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                                    </svg>
+                                    Авторизация через Google
+                                </a>
+                            </div>
+                            <div class="u-form-group">
+                                <input type="email" placeholder="Email"/>
+                            </div>
+                            <div class="u-form-group">
+                                <input type="password" placeholder="Password"/>
+                            </div>
+                            <div class="u-form-group">
+                                <button>Вход</button>
+                            </div>
+                            <div class="u-form-group">
+                                <a href="#" class="forgot-password">Забыли пароль?</a>
+                            </div>
+                        </form>
+                        <form class="email-signup">
+                            <div class="social-login">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                                        <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/>
+                                    </svg>
+                                    Авторизация через facebook
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                                    </svg>
+                                    Авторизация через Google
+                                </a>
+                            </div>
+                            <div class="u-form-group">
+                                <input type="email" placeholder="Email"/>
+                            </div>
+                            <div class="u-form-group">
+                                <input type="password" placeholder="Password"/>
+                            </div>
+                            <div class="u-form-group">
+                                <input type="password" placeholder="Confirm Password"/>
+                            </div>
+                            <div class="u-form-group">
+                                <button>Регистрация</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
-	 					<form> 
-	 						<label class="nl-icon">
 
-	 						<input type="email" name="" placeholder="Введите ваш E-Mail адрес"> 
-	 						</label> 
+        </div>
+    </section>
 
-	 						<button class="btn-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"/></svg>Подписаться</button>
-	 					</form>
-	 				</div>
-	 			</div>
-	 		</div>
-	 		<div class="wave"></div>
-	 	</section>
+    <!-- Add Google Calendar -->
+    <section class="g_calendar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
 
-	 </main>
-	 <footer>
-	 	<div class="container">
-	 		<div class="row">
-	 			<div class="col-sm-4">
-	 				<a href="#">
-	 					<img src="img/logo-blue.png" class="footer_logo">
-	 				</a>
-	 				<ul class="soc_footer">
-	 					<a href="#">
-	 						<li>
-	 							<!-- VK SVG -->
-	 							<svg data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M21.54736,7H18.25688a.74281.74281,0,0,0-.65452.39156s-1.31237,2.41693-1.73392,3.231C14.73438,12.8125,14,12.125,14,11.10863V7.60417A1.10417,1.10417,0,0,0,12.89583,6.5h-2.474a1.9818,1.9818,0,0,0-1.751.8125s1.25626-.20312,1.25626,1.48958c0,.41974.02162,1.62723.04132,2.64a.72943.72943,0,0,1-1.273.50431,21.54029,21.54029,0,0,1-2.4982-4.54359A.69314.69314,0,0,0,5.5668,7C4.8532,7,3.42522,7,2.57719,7a.508.508,0,0,0-.47969.68481C3.00529,10.17487,6.91576,18,11.37917,18h1.87865A.74219.74219,0,0,0,14,17.25781V16.12342a.7293.7293,0,0,1,1.22868-.5315l2.24861,2.1127A1.08911,1.08911,0,0,0,18.223,18h2.95281c1.42415,0,1.42415-.98824.64768-1.75294-.54645-.53817-2.51832-2.61663-2.51832-2.61663A1.01862,1.01862,0,0,1,19.2268,12.307c.63737-.83876,1.67988-2.21175,2.122-2.79993C21.95313,8.70313,23.04688,7,21.54736,7Z"/></svg>
-	 							<!-- END VK SVG -->
-	 						</li>
-	 					</a>
+                    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20131124T010000Z/20131124T020000Z&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY"
+                       target="_blunk" class="add_to_gc">
+                        <!-- <h3>Добавить в гугл календарь</h3> -->
+                        <img src="img/icons/gc-1.png">
+                        <button class="btn-1">Добавить в календарь</button>
 
-	 					<a href="#">
-	 						<li>
-	 							<!-- INSTA SVG -->
-	 							
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-	 							<!-- END INSTA SVG -->
-	 						</li>
-	 					</a>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-	 					<a href="#">
-	 						<li>
-	 							<!-- FB SVG -->
-	 							<svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M13,10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189,0.374-2.691,1.118-3.512C11.862,4.41,12.791,4,13.904,4H16v3h-2.1   C13.402,7,13,7.402,13,7.899V10z"/></g></svg>
-	 							<!-- END FB SVG -->
-	 						</li>
-	 					</a>
+    </section>
+    <!--  -->
+    <section class="s-newsletter">
+        <div class="container">
 
-	 					<a href="#">
-	 						<li>
-	 							<!-- TW SVG -->
-	 							<svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
-	 							<!-- END TW SVG -->
-	 						</li>
-	 					</a>
-	 				</ul>
-	 				<div class="sub-info-block">
+            <div class="row">
+                <div class="col-md-12 center">
+                    <h2 class="h"><span>подписаться  </span> <b>На Рассылку </b></h2>
+                    <small>Еженедельно получайте новостную рассылку с последними событиями, проектами и с новыми
+                        партнерами.
+                    </small>
+
+                    <form>
+                        <label class="nl-icon">
+
+                            <input type="email" name="" placeholder="Введите ваш E-Mail адрес">
+                        </label>
+
+                        <button class="btn-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"/>
+                            </svg>
+                            Подписаться
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wave"></div>
+    </section>
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#">
+                    <img src="img/logo-blue.png" class="footer_logo">
+                </a>
+                <ul class="soc_footer">
+                    <a href="#">
+                        <li>
+                            <!-- VK SVG -->
+                            <svg data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24"
+                                 xmlns="http://www.w3.org/2000/svg"><title/>
+                                <path d="M21.54736,7H18.25688a.74281.74281,0,0,0-.65452.39156s-1.31237,2.41693-1.73392,3.231C14.73438,12.8125,14,12.125,14,11.10863V7.60417A1.10417,1.10417,0,0,0,12.89583,6.5h-2.474a1.9818,1.9818,0,0,0-1.751.8125s1.25626-.20312,1.25626,1.48958c0,.41974.02162,1.62723.04132,2.64a.72943.72943,0,0,1-1.273.50431,21.54029,21.54029,0,0,1-2.4982-4.54359A.69314.69314,0,0,0,5.5668,7C4.8532,7,3.42522,7,2.57719,7a.508.508,0,0,0-.47969.68481C3.00529,10.17487,6.91576,18,11.37917,18h1.87865A.74219.74219,0,0,0,14,17.25781V16.12342a.7293.7293,0,0,1,1.22868-.5315l2.24861,2.1127A1.08911,1.08911,0,0,0,18.223,18h2.95281c1.42415,0,1.42415-.98824.64768-1.75294-.54645-.53817-2.51832-2.61663-2.51832-2.61663A1.01862,1.01862,0,0,1,19.2268,12.307c.63737-.83876,1.67988-2.21175,2.122-2.79993C21.95313,8.70313,23.04688,7,21.54736,7Z"/>
+                            </svg>
+                            <!-- END VK SVG -->
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <!-- INSTA SVG -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                            <!-- END INSTA SVG -->
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <!-- FB SVG -->
+                            <svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M13,10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189,0.374-2.691,1.118-3.512C11.862,4.41,12.791,4,13.904,4H16v3h-2.1   C13.402,7,13,7.402,13,7.899V10z"/></g></svg>
+                            <!-- END FB SVG -->
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <!-- TW SVG -->
+                            <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
+                            <!-- END TW SVG -->
+                        </li>
+                    </a>
+                </ul>
+                <div class="sub-info-block">
 	 					<span class="info-item-bold">
 	 						+38 (099) 123 45 78
 	 					</span>
-	 					<span class="info-item">
+                    <span class="info-item">
 	 						testmail@gmail.com
 	 					</span>
 
-	 					<div class="center">
-	 						г.Харьков, ул.Соколова, 24\2
-	 					</div>
-	 				</div>
-	 				<small>
-	 					Все права защищены 2018© . <b>Фундація схід-захід</b>.
-	 					<a href="gudzart.com" s style="display: block">• Разработка сайта •</a>
-	 				</small>
-	 			</div>
+                    <div class="center">
+                        г.Харьков, ул.Соколова, 24\2
+                    </div>
+                </div>
+                <small>
+                    Все права защищены 2018© . <b>Фундація схід-захід</b>.
+                    <a href="gudzart.com" s style="display: block">• Разработка сайта •</a>
+                </small>
+            </div>
 
-	 			<div class="offset-2 col-sm-2">
-	 				<h3>Ссылки</h3>
-	 				<ul class="footer_nav">
-	 					<a href="#">
-	 						<li>Главная</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>Новости</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>О Нас</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>Помочь</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>Проекты</li>
-	 					</a>
-	 				</ul>
-	 			</div>
+            <div class="offset-2 col-sm-2">
+                <h3>Ссылки</h3>
+                <ul class="footer_nav">
+                    <a href="#">
+                        <li>Главная</li>
+                    </a>
+                    <a href="#">
+                        <li>Новости</li>
+                    </a>
+                    <a href="#">
+                        <li>О Нас</li>
+                    </a>
+                    <a href="#">
+                        <li>Помочь</li>
+                    </a>
+                    <a href="#">
+                        <li>Проекты</li>
+                    </a>
+                </ul>
+            </div>
 
-	 			<div class="col-sm-2">
-	 				<h3>О Нас</h3>
-	 				<ul class="footer_nav">
-	 					<a href="#">
-	 						<li>Проекты</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>История</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>Документация</li>
-	 					</a>
-	 					
-	 				</ul>
-	 			</div>
+            <div class="col-sm-2">
+                <h3>О Нас</h3>
+                <ul class="footer_nav">
+                    <a href="#">
+                        <li>Проекты</li>
+                    </a>
+                    <a href="#">
+                        <li>История</li>
+                    </a>
+                    <a href="#">
+                        <li>Документация</li>
+                    </a>
 
-	 			<div class="col-sm-2">
-	 				<h3>Помочь</h3>
-	 				<ul class="footer_nav">
-	 					<a href="#">
-	 						<li>Волонтеры</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>Стать донором</li>
-	 					</a>
-	 					<a href="#">
-	 						<li>Присоедениться к нам</li>
-	 					</a>
-	 					
-	 				</ul>
-	 			</div>
+                </ul>
+            </div>
 
-	 			
-	 		</div>
+            <div class="col-sm-2">
+                <h3>Помочь</h3>
+                <ul class="footer_nav">
+                    <a href="#">
+                        <li>Волонтеры</li>
+                    </a>
+                    <a href="#">
+                        <li>Стать донором</li>
+                    </a>
+                    <a href="#">
+                        <li>Присоедениться к нам</li>
+                    </a>
+
+                </ul>
+            </div>
 
 
-	 	</div>
-	 </footer>
+        </div>
 
 
+    </div>
+</footer>
 
-	 <!-- Link to Top Button -->
 
-	 <a href="#top" class="top_button">
-	 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg>
-	 </a>
+<!-- Link to Top Button -->
 
-	 
+<a href="#top" class="top_button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/>
+    </svg>
+</a>
 
-	<script src="js/scripts.min.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$(".email-signup").hide();
-$("#signup-box-link").click(function(){
-  $(".email-login").fadeOut(100);
-  $(".email-signup").delay(100).fadeIn(100);
-  $("#login-box-link").removeClass("active");
-  $("#signup-box-link").addClass("active");
-});
-$("#login-box-link").click(function(){
-  $(".email-login").delay(100).fadeIn(100);;
-  $(".email-signup").fadeOut(100);
-  $("#login-box-link").addClass("active");
-  $("#signup-box-link").removeClass("active");
-});
-})(jQuery);
-		
-	</script>
+
+<script src="js/scripts.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".email-signup").hide();
+        $("#signup-box-link").click(function () {
+            $(".email-login").fadeOut(100);
+            $(".email-signup").delay(100).fadeIn(100);
+            $("#login-box-link").removeClass("active");
+            $("#signup-box-link").addClass("active");
+        });
+        $("#login-box-link").click(function () {
+            $(".email-login").delay(100).fadeIn(100);
+            ;
+            $(".email-signup").fadeOut(100);
+            $("#login-box-link").addClass("active");
+            $("#signup-box-link").removeClass("active");
+        });
+    })(jQuery);
+
+</script>
 
 </body>
 </html>
