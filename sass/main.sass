@@ -201,7 +201,11 @@ blockquote
 	background-color: $color-1
 	display: block
 	position: relative
+	overflow: hidden
 	z-index: 1000
+	.q-slider
+		.slick-dots
+			display: none !important
 	.btn-1
 		position: absolute
 		z-index: 100
@@ -1460,8 +1464,10 @@ footer
 .s-team
 	padding-bottom: 100px
 	position: relative
-	z-index: 1000
+	z-index: 5000
 
+.mobile-menu-bar
+	display: none
 
 .s-direction
 	position: relative
@@ -2140,6 +2146,20 @@ aside
 
 		&:hover 
 			color: $links
+.mobile-menu-wrap
+	display: none
 
+@-moz-keyframes mrotr 
+	0% 
+		-moz-transform: translateY(0px) rotate(0)
+		transform: translateY(0px) rotate(0)
+  
+	50% 
+		-moz-transform: translateY(15px) rotate(0)
+		transform: translateY(15px) rotate(0)
+  
+	100%
+		-moz-transform: translateY(15px) rotate(45deg)
+		transform: translateY(15px) rotate(45deg)
 
 @import "media" // Always at the end
